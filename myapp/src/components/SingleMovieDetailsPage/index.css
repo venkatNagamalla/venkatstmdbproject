@@ -1,0 +1,40 @@
+
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.sections-container{
+    padding: 20px;
+}
+
+
+.cast-text{
+    color: #c8c2c2;
+    margin-top: 25px;
+    font-weight: 450;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.cast-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.movie-banner-section{
+    padding: 3px;
+}
+
+@media screen and (min-width:768px){
+    .movie-banner-section{
+        padding: 20px;
+    }
+}

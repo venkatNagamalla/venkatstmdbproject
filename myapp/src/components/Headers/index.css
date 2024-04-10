@@ -1,0 +1,131 @@
+
+.nav-container{
+    background-color: #373839;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+} 
+
+.logo-text{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 430;
+    padding-left: 10px;
+}
+
+.nav-item-container{
+    position: fixed;
+    top: 0px;
+    background-color: #252627;
+    width: 150px;
+    left: -150px;
+    transition: 0.2s all ease-in-out;
+    height: 100%;
+}
+
+.side-nav-active{
+    left: 0px;
+}
+
+.logo-side-text{
+    color: #fff;
+    font-weight: 450;
+    font-size: 18px;
+    padding: 18px 0px 0px 16px;    
+}
+
+.active li{
+    background-color: rgb(126, 115, 115);
+    transition: all 0.2s ease-in-out;
+    border-radius: 2px;
+    
+}
+
+.link:hover{
+    background-color: rgb(87, 83, 83);
+    
+}
+
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links-container{
+    margin-top: 28px;
+    list-style: none;
+}
+
+.link{
+    color: #fff;
+    margin: 7px;
+    padding: 8px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.menu-btn{
+    background-color: transparent;
+    border:none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    height: 25px;
+}
+
+.search-icon{
+    padding-top: 3.3px;
+    margin-left: 2px;
+}
+
+.icon{
+    height: 15px;
+    width:15px;
+}
+
+@media screen and (min-width:768px){
+    .nav-container{
+        display: flex;
+        padding: 10px 50px 10px 50px;
+    }
+    .nav-item-container{
+        position: static;
+        width: 55%;
+        background-color: transparent;
+    }
+    .nav-links-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0px;
+
+    }
+    .menu-btn{
+        display: none;
+    }
+    .link{
+        font-size: 13px;
+        margin: 3px;
+        margin-top: 0px;
+    }
+    .side-logo{
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .nav-item-container{
+        width:33%;
+    }
+}
